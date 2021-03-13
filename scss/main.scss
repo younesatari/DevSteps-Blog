@@ -140,3 +140,52 @@ a {
       align-items: center !important;
    }
 }
+
+/* Welcome Section */
+#welcome {
+   border-top: 5px solid $warning;
+   border-bottom: 5px solid $warning;
+}
+
+/* Main Section */
+#main {
+   article {
+
+      box-shadow: 0 6px 7px rgba(0,0,0, .2);
+      transition: all .3s ease;
+      width: 85%;
+
+      &:hover {
+         box-shadow: 0 6px 7px rgba(0,0,0, .4);
+      }
+
+      .left {
+         .card-img-overlay {
+            background: rgba(124,52,1,.6);
+   
+            .card-text {
+               background: rgba(124,52,1,.4);
+               border-right: 10px solid #fff;
+               cursor: pointer;
+            }
+         }
+   
+         .content {
+            font-size: .8rem !important;
+         }
+      }
+
+      .right {
+         ul {
+            li {
+               font-size: 1.1rem !important;
+               transition: all .3s ease;
+
+               &:hover {
+                  transform: scale(1.1);
+               }
+            }
+         }
+      }
+   }
+}

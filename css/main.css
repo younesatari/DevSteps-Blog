@@ -85,4 +85,30 @@ a {
     #home {
       align-items: center !important; } }
 
+/* Welcome Section */
+#welcome {
+  border-top: 5px solid #eab791;
+  border-bottom: 5px solid #eab791; }
+
+/* Main Section */
+#main article {
+  box-shadow: 0 6px 7px rgba(0, 0, 0, 0.2);
+  transition: all .3s ease;
+  width: 85%; }
+  #main article:hover {
+    box-shadow: 0 6px 7px rgba(0, 0, 0, 0.4); }
+  #main article .left .card-img-overlay {
+    background: rgba(124, 52, 1, 0.6); }
+    #main article .left .card-img-overlay .card-text {
+      background: rgba(124, 52, 1, 0.4);
+      border-right: 10px solid #fff;
+      cursor: pointer; }
+  #main article .left .content {
+    font-size: .8rem !important; }
+  #main article .right ul li {
+    font-size: 1.1rem !important;
+    transition: all .3s ease; }
+    #main article .right ul li:hover {
+      transform: scale(1.1); }
+
 /*# sourceMappingURL=main.css.map */
