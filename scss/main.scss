@@ -1,0 +1,142 @@
+@import "media-queries";
+
+$primary: #c98553;
+$danger: #7c3401;
+$secondary: #f9f9f9;
+$warning: #eab791;
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Roboto', sans-serif !important;
+}
+
+/* Utility */
+a {
+   text-decoration: none !important;
+}
+
+/* Home */
+#home {
+   height: 55vh;
+   background-image: linear-gradient(to right bottom, 
+   rgba(124,52,1,.7), 
+   rgba(201,133,83,.6)),
+	   url('../img/hero.jpg');
+   background-repeat: no-repeat;   
+   background-size: cover;   
+   background-clip: center;
+
+   /* Top Section */
+   .top-section {
+      border-bottom: 1px solid $primary;
+
+      .search-bar {
+         display: inline-block !important;
+         border: 1px solid $primary;
+
+         .control-form {
+            background: transparent;
+            margin-right: .5rem !important;
+
+            &:focus{
+               outline: none !important;
+           }
+
+           @include screen {
+            font-size: .9rem !important;
+         }
+         }
+
+         i {
+            @include screen {
+               font-size: .8rem !important;
+            }
+         }
+      }
+   }
+
+   /* Nav Section */
+   nav {
+      height: 200px !important;
+
+      li {
+         height: 130px;
+         width: 130px;
+         border: 2px solid $secondary;
+         margin: 0 1rem;
+         padding: 1rem;
+         border-radius: 50%;
+         transition: all .3s ease;
+
+         &:hover {
+            background: $secondary;
+            transition: all .3s ease;
+
+            @include smallScreen {
+               background: none;
+            }
+         }
+
+         &:hover a{
+            color: #333 !important;
+            transition: all .3s ease;
+
+            
+         }
+
+         @include tablet {
+            height: 100px;
+            width: 100px;
+         }
+
+         @include screen {
+            height: 77px;
+            width: 77px;
+         }
+
+         @include smallScreen {
+            border: none;
+            margin: 0 .1rem;
+         }
+
+         a {
+            @include tablet {
+               font-size: .8rem !important;
+            }
+
+            
+         }
+      }
+
+      ul {
+         @include verySmallScreen {
+            flex-direction: column;
+         }
+      }
+   }
+
+   /* Bottom Section */
+   .bottom-section {
+      i {
+         font-size: 1.2rem !important;
+         transition: all .3s ease;
+
+         &:hover {
+            transform: scale(1.2);
+         }
+
+         @include screen {
+            font-size: 1.1rem !important;
+         }
+      }
+   }  
+
+   @include smallScreen {
+      align-items: center !important;
+   }
+}
