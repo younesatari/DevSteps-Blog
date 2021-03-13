@@ -10,6 +10,13 @@ body {
 a {
   text-decoration: none !important; }
 
+#main .sidebar .email .card-body p, #main .sidebar .about .card-body p, #main .sidebar .common-articles .img-content-body {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6); }
+
+#main .sidebar .email .card-header, #main .sidebar .about .card-header, #main .sidebar .common-articles .card-header {
+  border-right: 15px solid #7c3401; }
+
 /* Home */
 #home {
   height: 55vh;
@@ -92,16 +99,16 @@ a {
 
 /* Main Section */
 #main article {
+  width: 95%;
   box-shadow: 0 6px 7px rgba(0, 0, 0, 0.2);
-  transition: all .3s ease;
-  width: 85%; }
+  transition: all .3s ease; }
   #main article:hover {
     box-shadow: 0 6px 7px rgba(0, 0, 0, 0.4); }
   #main article .left .card-img-overlay {
     background: rgba(124, 52, 1, 0.6); }
     #main article .left .card-img-overlay .card-text {
       background: rgba(124, 52, 1, 0.4);
-      border-right: 10px solid #fff;
+      border-right: 15px solid #fff;
       cursor: pointer; }
   #main article .left .content {
     font-size: .8rem !important; }
@@ -110,5 +117,11 @@ a {
     transition: all .3s ease; }
     #main article .right ul li:hover {
       transform: scale(1.1); }
+#main .sidebar .email .card-header {
+  font-size: 1.2rem !important; }
+#main .sidebar .about .card-header {
+  font-size: 1.2rem !important; }
+#main .sidebar .common-articles .card-header {
+  font-size: 1.2rem !important; }
 
 /*# sourceMappingURL=main.css.map */

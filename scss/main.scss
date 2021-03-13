@@ -20,6 +20,15 @@ a {
    text-decoration: none !important;
 }
 
+%sidebarSharedStyled {
+   font-size: 1rem;
+   color: rgba(0,0,0,.6);
+}
+
+%borderRight {
+   border-right: 15px solid $danger;
+}
+
 /* Home */
 #home {
    height: 55vh;
@@ -149,23 +158,25 @@ a {
 
 /* Main Section */
 #main {
+   
    article {
 
+      width: 95%;
       box-shadow: 0 6px 7px rgba(0,0,0, .2);
       transition: all .3s ease;
-      width: 85%;
 
       &:hover {
          box-shadow: 0 6px 7px rgba(0,0,0, .4);
       }
 
       .left {
+
          .card-img-overlay {
             background: rgba(124,52,1,.6);
    
             .card-text {
                background: rgba(124,52,1,.4);
-               border-right: 10px solid #fff;
+               border-right: 15px solid #fff;
                cursor: pointer;
             }
          }
@@ -176,8 +187,11 @@ a {
       }
 
       .right {
+
          ul {
+
             li {
+
                font-size: 1.1rem !important;
                transition: all .3s ease;
 
@@ -187,5 +201,49 @@ a {
             }
          }
       }
+   }
+
+   .sidebar {
+
+      .email {
+
+         .card-header {
+            font-size: 1.2rem !important;
+            @extend %borderRight;
+         }
+   
+         .card-body {
+            p {
+               @extend %sidebarSharedStyled;
+            }
+         }
+      }
+
+      .about {
+
+         .card-header {
+            font-size: 1.2rem !important;
+            @extend %borderRight;
+         }
+
+         .card-body {
+            p {
+               @extend %sidebarSharedStyled;
+            }
+         }
+      }
+
+      .common-articles {
+
+         .card-header {
+            font-size: 1.2rem !important;
+            @extend %borderRight;
+         }
+
+         .img-content-body {
+            @extend %sidebarSharedStyled;
+         }
+      }
+
    }
 }
