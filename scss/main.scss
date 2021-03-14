@@ -240,8 +240,29 @@ a {
             @extend %borderRight;
          }
 
+         .img-content-title {
+            font-size: 1.1rem !important;
+         }
+
          .img-content-body {
-            @extend %sidebarSharedStyled;
+            font-size: .95rem;
+            color: rgba(0,0,0,.6);
+         }
+      }
+
+      .categories {
+         .card-header {
+            font-size: 1.2rem !important;
+            @extend %borderRight;
+         }
+
+         .card-body {
+            a {
+               transition: all .3s ease;
+               &:hover {
+                  background: $danger !important;
+               }
+            }
          }
       }
 

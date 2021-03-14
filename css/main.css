@@ -10,11 +10,11 @@ body {
 a {
   text-decoration: none !important; }
 
-#main .sidebar .email .card-body p, #main .sidebar .about .card-body p, #main .sidebar .common-articles .img-content-body {
+#main .sidebar .email .card-body p, #main .sidebar .about .card-body p {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.6); }
 
-#main .sidebar .email .card-header, #main .sidebar .about .card-header, #main .sidebar .common-articles .card-header {
+#main .sidebar .email .card-header, #main .sidebar .about .card-header, #main .sidebar .common-articles .card-header, #main .sidebar .categories .card-header {
   border-right: 15px solid #7c3401; }
 
 /* Home */
@@ -123,5 +123,16 @@ a {
   font-size: 1.2rem !important; }
 #main .sidebar .common-articles .card-header {
   font-size: 1.2rem !important; }
+#main .sidebar .common-articles .img-content-title {
+  font-size: 1.1rem !important; }
+#main .sidebar .common-articles .img-content-body {
+  font-size: .95rem;
+  color: rgba(0, 0, 0, 0.6); }
+#main .sidebar .categories .card-header {
+  font-size: 1.2rem !important; }
+#main .sidebar .categories .card-body a {
+  transition: all .3s ease; }
+  #main .sidebar .categories .card-body a:hover {
+    background: #7c3401 !important; }
 
 /*# sourceMappingURL=main.css.map */
