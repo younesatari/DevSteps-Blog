@@ -1,9 +1,9 @@
 @import "media-queries";
 
-$primary: #c98553;
-$danger: #7c3401;
+$primary: #00adb5;
+$danger: #192535;
 $secondary: #f9f9f9;
-$warning: #eab791;
+$warning: #192535;
 
 * {
    margin: 0;
@@ -33,9 +33,9 @@ a {
 #home {
    height: 55vh;
    background-image: linear-gradient(to right bottom, 
-   rgba(124,52,1,.7), 
-   rgba(201,133,83,.6)),
-	   url('../img/hero.jpg');
+   rgba(0,173,181,.7), 
+   rgba(25,37,53,.8)),
+	   url('../img/hero1.jpg');
    background-repeat: no-repeat;   
    background-size: cover;   
    background-clip: center;
@@ -152,8 +152,8 @@ a {
 
 /* Welcome Section */
 #welcome {
-   border-top: 5px solid $warning;
-   border-bottom: 5px solid $warning;
+   border-right: 15px solid $danger;
+   border-left: 15px solid $danger;
 }
 
 /* Main Section */
@@ -174,10 +174,10 @@ a {
       .left {
 
          .card-img-overlay {
-            background: rgba(124,52,1,.6);
+            background: rgba(124,52,1,0);
    
             .card-text {
-               background: rgba(124,52,1,.4);
+               background: rgba(0,173,181,.4);
                border-right: 15px solid #fff;
                cursor: pointer;
             }
@@ -222,6 +222,8 @@ a {
 
       .email {
 
+         box-shadow: 0 6px 7px rgba(0,0,0, .2);
+
          .card-header {
             font-size: 1.2rem !important;
             @extend %borderRight;
@@ -258,6 +260,8 @@ a {
 
       .about {
 
+         box-shadow: 0 6px 7px rgba(0,0,0, .2);
+
          .card-header {
             font-size: 1.2rem !important;
             @extend %borderRight;
@@ -278,6 +282,8 @@ a {
 
       .common-articles {
 
+         box-shadow: 0 6px 7px rgba(0,0,0, .2);
+
          .card-header {
             font-size: 1.2rem !important;
             @extend %borderRight;
@@ -297,6 +303,9 @@ a {
       }
 
       .categories {
+
+         box-shadow: 0 6px 7px rgba(0,0,0, .2);
+
          .card-header {
             font-size: 1.2rem !important;
             @extend %borderRight;
@@ -320,5 +329,69 @@ a {
          }
       }
 
+   }
+}
+
+/* Who am I Section */
+#who-am-i {
+
+   img {
+      border-radius: 50%;
+      border: 3px solid $secondary;
+      box-shadow: 0 4px 4px rgba(0,0,0, .3);
+   }
+
+   h4 {
+      position: relative;
+      box-shadow: 0 4px 4px rgba(0,0,0, .1);
+
+      @include smallScreen {
+         font-size: 1rem !important;
+      }
+
+      &::after {
+         content: "";
+         position: absolute;
+         left: -5px;
+         top: 50%;
+         transform: translate(-50%, -50%);
+         width: 0; 
+         height: 0; 
+         border-top: 10px solid transparent;
+         border-bottom: 10px solid transparent; 
+         border-right:10px solid #fff; 
+      }
+   }
+
+   p {
+      @include smallScreen {
+         font-size: .9rem !important;
+      }
+   }
+}
+
+/* Footer */
+#footer {
+   #contact {
+      .col-12 {
+         a {
+            &:hover {
+               transition: all .3s ease;
+               text-decoration: underline !important;
+            }
+
+            @include smallScreen {
+               font-size: .9rem !important;
+            }
+         }
+      }
+   }
+
+   #copyright {
+      .col {
+         @include smallScreen {
+            font-size: .9rem !important;
+         }
+      }
    }
 }
