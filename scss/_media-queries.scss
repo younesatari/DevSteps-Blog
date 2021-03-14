@@ -5,13 +5,19 @@
 }
 
 @mixin tablet {
-   @media screen and (max-width:895px) {
+   @media screen and (max-width:849px) {
       @content;
    }
 }
 
 @mixin screen {
    @media screen and (max-width:581px) {
+      @content;
+   }
+}
+
+@mixin screenX {
+   @media screen and (max-width:720px) {
       @content;
    }
 }
