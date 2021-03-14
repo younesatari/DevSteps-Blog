@@ -257,10 +257,12 @@ a {
          }
 
          .card-body {
-            a {
-               transition: all .3s ease;
-               &:hover {
-                  background: $danger !important;
+            li {
+               a {
+                  transition: all .3s ease;
+                  &:hover {
+                     background: $danger !important;
+                  }
                }
             }
          }

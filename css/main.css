@@ -130,9 +130,9 @@ a {
   color: rgba(0, 0, 0, 0.6); }
 #main .sidebar .categories .card-header {
   font-size: 1.2rem !important; }
-#main .sidebar .categories .card-body a {
+#main .sidebar .categories .card-body li a {
   transition: all .3s ease; }
-  #main .sidebar .categories .card-body a:hover {
+  #main .sidebar .categories .card-body li a:hover {
     background: #7c3401 !important; }
 
 /*# sourceMappingURL=main.css.map */
