@@ -237,4 +237,13 @@ a {
     display: block !important;
     width: 100% !important; } }
 
+.comment-section .comment-method .cmnt-1 {
+  background: #fd7e14 !important;
+  border-color: #fd7e14 !important; }
+@media screen and (max-width: 765px) {
+  .comment-section .comment-method {
+    flex-direction: column; } }
+.comment-section #form a {
+  width: 100% !important; }
+
 /*# sourceMappingURL=main.css.map */

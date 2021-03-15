@@ -4,6 +4,7 @@ $primary: #00adb5;
 $danger: #192535;
 $secondary: #f9f9f9;
 $warning: #192535;
+$orange: #fd7e14;
 
 * {
    margin: 0;
@@ -416,6 +417,26 @@ a {
    a {
       @include screenX {
          display: block !important;
+         width: 100% !important;
+      }
+   }
+}
+
+.comment-section {
+   
+   .comment-method {
+      .cmnt-1 {
+         background: $orange !important;
+         border-color: $orange !important;
+      }
+
+      @include screenX {
+         flex-direction: column;
+      }
+   }
+   
+   #form {
+      a {
          width: 100% !important;
       }
    }
