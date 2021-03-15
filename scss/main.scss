@@ -144,6 +144,10 @@ a {
             font-size: 1.1rem !important;
          }
       }
+
+      @include verySmallScreen {
+         display: none !important;
+      }
    }  
 
    @include smallScreen {
@@ -156,6 +160,10 @@ a {
    border-right: 15px solid $danger;
    border-left: 15px solid $danger;
    box-shadow: 0 4px 4px rgba(0,0,0, .2);
+
+   @include verySmallScreen {
+      font-size: .8rem !important;
+   }
 }
 
 /* Main Section */
@@ -205,6 +213,12 @@ a {
 
                @include tablet {
                   font-size: 1rem !important;
+               }
+
+               a {
+                  @include verySmallScreen {
+                     font-size: .8rem !important;
+                  }
                }
             }
 
@@ -372,6 +386,10 @@ a {
          font-size: .9rem !important;
       }
 
+      @include verySmallScreen {
+         font-size: .8rem !important;
+      }
+
       text-align: justify;
    }
 }
@@ -389,6 +407,10 @@ a {
             @include smallScreen {
                font-size: .9rem !important;
             }
+
+            @include verySmallScreen {
+               font-size: .7rem !important;
+            }
          }
       }
    }
@@ -397,6 +419,10 @@ a {
       .col {
          @include smallScreen {
             font-size: .9rem !important;
+         }
+
+         @include verySmallScreen {
+            font-size: .8rem !important;
          }
       }
    }
