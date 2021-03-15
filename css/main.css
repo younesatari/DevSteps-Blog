@@ -95,7 +95,8 @@ a {
 /* Welcome Section */
 #welcome {
   border-right: 15px solid #192535;
-  border-left: 15px solid #192535; }
+  border-left: 15px solid #192535;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); }
 
 /* Main Section */
 #main article {
