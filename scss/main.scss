@@ -276,6 +276,8 @@ a {
                @include tablet {
                   font-size: .9rem !important;
                }
+
+               text-align: justify;
             }
          }
       }
@@ -367,6 +369,8 @@ a {
       @include smallScreen {
          font-size: .9rem !important;
       }
+
+      text-align: justify;
    }
 }
 
@@ -392,6 +396,26 @@ a {
          @include smallScreen {
             font-size: .9rem !important;
          }
+      }
+   }
+}
+
+/**** Articles PAGE *****/
+.article-text {
+   font-size: 1.1rem !important;
+   color: #333 !important;
+
+   p {
+      text-align: justify;
+      line-height: 1.8;
+   }
+}
+
+.share-2 {
+   a {
+      @include screenX {
+         display: block !important;
+         width: 100% !important;
       }
    }
 }

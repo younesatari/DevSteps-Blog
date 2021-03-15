@@ -152,9 +152,11 @@ a {
     @media screen and (max-width: 849px) {
       #main .sidebar .about .card-header {
         font-size: 1rem !important; } }
-  @media screen and (max-width: 849px) {
-    #main .sidebar .about .card-body p {
-      font-size: .9rem !important; } }
+  #main .sidebar .about .card-body p {
+    text-align: justify; }
+    @media screen and (max-width: 849px) {
+      #main .sidebar .about .card-body p {
+        font-size: .9rem !important; } }
 #main .sidebar .common-articles {
   box-shadow: 0 6px 7px rgba(0, 0, 0, 0.2); }
   #main .sidebar .common-articles .card-header {
@@ -204,9 +206,11 @@ a {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-right: 10px solid #fff; }
-@media screen and (max-width: 434px) {
-  #who-am-i p {
-    font-size: .9rem !important; } }
+#who-am-i p {
+  text-align: justify; }
+  @media screen and (max-width: 434px) {
+    #who-am-i p {
+      font-size: .9rem !important; } }
 
 /* Footer */
 #footer #contact .col-12 a:hover {
@@ -218,5 +222,18 @@ a {
 @media screen and (max-width: 434px) {
   #footer #copyright .col {
     font-size: .9rem !important; } }
+
+/**** Articles PAGE *****/
+.article-text {
+  font-size: 1.1rem !important;
+  color: #333 !important; }
+  .article-text p {
+    text-align: justify;
+    line-height: 1.8; }
+
+@media screen and (max-width: 765px) {
+  .share-2 a {
+    display: block !important;
+    width: 100% !important; } }
 
 /*# sourceMappingURL=main.css.map */
